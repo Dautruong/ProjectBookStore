@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Admin
+Build-Jdk: 11.0.12
+Implementation-Title: com.app.MIEshop Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.app.MIEshop
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+
