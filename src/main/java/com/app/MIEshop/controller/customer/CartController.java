@@ -2,6 +2,7 @@ package com.app.MIEshop.controller.customer;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -92,7 +93,8 @@ public class CartController extends BaseController {
 		saleOrder.setCustomerAddress(customerAddress);
 		saleOrder.setCustomerPhone(customerPhone);
 		saleOrder.setCode(String.valueOf(System.currentTimeMillis()));
-
+		
+		
 //		if(getUserLogined() != null) {
 //			
 //		}
@@ -103,6 +105,8 @@ public class CartController extends BaseController {
 			SaleOrderProducts saleOrderProducts = new SaleOrderProducts();
 			saleOrderProducts.setProduct(productService.getById(cartItem.getProductId()));
 			saleOrderProducts.setQuality(cartItem.getQuanlity());
+			saleOrder.setTotal(cartItem.getPriceUnit());
+			saleOrder.setCreatedDate(new Date());
 			saleOrder.addSaleOrderProducts(saleOrderProducts);
 		}
 

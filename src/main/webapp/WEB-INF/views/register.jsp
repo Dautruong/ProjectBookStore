@@ -77,9 +77,6 @@ cursor: pointer;
               </div>
 
               <span  class="d-block text-center mt-2 small ">Bạn đã có tài khoản?<a class="register" href="${base}/login"> Đăng nhập</a> </span>
-
-             
-
             </form>
           </div>
         </div>

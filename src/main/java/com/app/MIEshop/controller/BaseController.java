@@ -1,5 +1,7 @@
 package com.app.MIEshop.controller;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -83,4 +85,12 @@ public abstract class BaseController {
 			return null;
 		}
 	}
-}
+	public String dateNow() {
+		LocalDateTime current = LocalDateTime.now();
+	    
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+	    String formatted = current.format(formatter);
+		return formatted;
+	}
+	
+} 
