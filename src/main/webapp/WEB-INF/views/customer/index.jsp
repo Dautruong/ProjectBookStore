@@ -35,7 +35,6 @@
 
 	<!-- Navigation-->
 	<jsp:include page="/WEB-INF/views/customer/layout/header.jsp"></jsp:include>
-
 	<!-- Section-->
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">
@@ -51,7 +50,7 @@
 							<!-- Sale badge-->
 							<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
 							<!-- Product image-->
-							<img class="card-img-top" src="${base}/uploads/${product.avatar}" alt="..." />
+							<img class="card-img-top" src="${base}/uploads/${product.avatar}" alt="tesst" />
 							<!-- Product details-->
 							<div class="card-body p-4">
 								<div class="text-center">
