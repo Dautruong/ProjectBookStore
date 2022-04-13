@@ -73,9 +73,8 @@
 										<fmt:setLocale value="vi_VN" scope="session" />
 											<fmt:formatNumber value="${product.priceSale }" type="currency" />
 									</span>
-									
-											<fmt:setLocale value="vi_VN" scope="session" />
-											<fmt:formatNumber value="${product.price }" type="currency" />
+									<fmt:setLocale value="vi_VN" scope="session" />
+									<fmt:formatNumber value="${product.price }" type="currency" />
 										
 								</div>
 							</div>
